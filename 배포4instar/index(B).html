@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index(B).html</title>
+   <!-- <link rel="stylesheet" type="text/css" href="login.css"> -->
+
+<style>
+   body, h1, input, p {
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS";
+	font-size: 13px;
+   }
+
+	body {
+		border-top: 15px solid #FFE400;
+	}
+
+	table {
+		width: 350px;
+	}
+
+	#memberLogin {
+		border-top: 50px solid #000040;
+		padding-top: 50px;
+	}
+
+	#memberLogin h1 {
+		font-size: 50px;
+		color: #CCC;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	#memberLogin legend {
+		display: none;
+	}
+
+	#memberLogin fieldset {
+		width: 330px;
+		border: 5px solid #CCC;
+		border-radius: 10px;
+		padding: 30px;
+		margin: 20px auto;
+	}
+
+	#memberId, #memberPWD {
+		width: 100%;
+		padding: 2px;
+		border: 1px solid #666;
+		text-align: left;
+	}
+
+	#idbox label {
+		font-size: 0.9em;
+		width: 60px;
+		float: left;
+		display: block;
+	}
+
+	#idbox {
+		float: left;
+		margin: 10px 10px;
+	}
+
+	#loginBtn {
+		display: block;
+		width: 100px;
+		height: 60px;
+		top: 10px;
+		margin-left: 10px;
+		border-style: none;
+		background: #110D7B;
+		border-radius: 10px;
+		color: white;
+	}
+
+	#Btn {
+		display: block;
+		float: left;
+		height: 30px;
+		position: relative;
+		padding: 5px 10px;
+		margin: 0px 3px;
+		top: 10px;
+		border-style: none;
+		background: #59585D;
+		border-radius: 5px;
+		color: white;
+	}
+
+	#btn1 {
+		clear: both;
+		text-align: center;
+		margin-left: -36px;
+	}
+
+	#btn2 {
+		text-align: center;
+		margin-top: 10px;
+		margin-left: 40px;
+	}
+
+	#btn2 input {
+		padding: 5px 10px;
+		border-style: none;
+		background: #666;
+		color: white;
+		border-radius: 5px;
+	}
+
+	#submit1 input {
+		padding: 5px 10px;
+		border-style: none;
+		background: #000040;
+		color: white;
+		border-radius: 5px;
+	}
+
+	.btn
+	{
+		background-color: black;
+		color: whitesmoke;
+		font-weight: bold;
+		border-radius: 8px;
+		padding: 5px 8px 5px 8px;
+	}
+
+	.login
+	{
+		background-color: navy; 
+		color: whitesmoke;
+		padding: 18px;
+		border-radius: 8px;
+	}
+  
+	/* 
+	table,tr,td{
+	  border: 1px solid black;
+	} 
+	*/
+</style>
+
+</head>
+<body>
+<form action="" method="post" id="memberLogin">
+  <h1>Member Login</h1>
+  <fieldset>
+    <table>
+      <tr>
+        <td><b>아이디</b></td>
+        <td> <input type="text" name="id" id="id" placeholder="아이디를 입력하시오" size="15"></td>
+        <td rowspan="2" align="center"> <input class="login" type="button" value="로그인하기"></td>
+      </tr>
+      <tr>
+        <td><b>비밀번호</b></td>
+        <td><input type="text" name="psw" id="psw" placeholder="비밀번호를 입력하시오" size="15"></td>
+      </tr>
+      <tr>
+        <td rowspan="2"></td>
+        <td><input type="checkbox" name="saveid" id="saveid"> 아이디저장
+        <input type="checkbox" name="save" id="save"> 보안접속</input>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="40">
+          <input class="btn" type="button" value="회원가입">
+          <input class="btn" type="button" value="아이디/비밀번호 찾기">
+        </td>
+      </tr>
+    </table>   
+  </fieldset>
+</form>
+
+</body>
+</html>

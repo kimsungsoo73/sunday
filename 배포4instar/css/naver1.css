@@ -1,0 +1,119 @@
+/* Google web font CDN*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box; /*전체에 박스사이징*/
+    outline: none; /*focus 했을때 테두리 나오게 */
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+    background-color: #f5f6f7;
+    line-height: 1.5em;
+    color : #222;
+    margin: 0;
+}
+
+
+.member{
+    width: 460px;
+    margin: auto; /*중앙 정렬*/
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.member .logo{
+    display: block;
+    margin :50px auto;
+}
+
+.member .field{
+    margin :5px 0; /*상하로 좀 띄워주기*/
+}
+
+.placehold-text{
+    display: block;
+    position: relative;
+}
+
+.placehold-text:before{
+    content: "@naver.com";
+    position: absolute;
+}
+
+/*점심시간이후  */
+.member input:not(input[type=radio]), .member select{
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.member input[type=button], .member input[type=submit]{
+    background-color: #2db400;
+    color:#fff
+}
+
+.field.birth div{
+   display: flex;
+}
+ 
+.field .mysmall{ color:gray }
+
+.field.tel-number div{
+    display:flex;
+}
+
+.field.tel-number div input:nth-child(1){
+    flex:3;
+}
+
+.field.tel-number div input:nth-child(2){
+    flex:1;
+}
+
+.myconfirm{
+    background-color: #f5f6f7;
+}
+
+/* 아래 꼬리푸터  */
+.member-footer{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;  
+}
+
+.member-footer  a{
+    text-decoration: none;
+    color:gray 
+ }
+
+.member-footer a:hover{
+   text-decoration: underline;
+   color:#2db400  
+}
+
+
+.member-footer div a:after{
+    content:'|';
+    font-size: 12px;
+    color:#bbb;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.member-footer div a:last-child:after{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
