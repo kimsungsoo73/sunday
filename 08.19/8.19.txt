@@ -1,0 +1,52 @@
+8.19
+
+1.
+윈도우 시작 cmd
+ㅁㄴㅇㄹ \\ 192.168.0.48
+
+2.
+vscode 설치
+ ㄴ file메뉴 자동저장
+ ㄴ setting mouse입력, map 삭제
+ ㄴ 확장에서 live server
+
+Mtest
+ ㄴworkhtml
+   ㄴ images그림폴더
+   ㄴ image그림폴더
+   ㄴ test.html
+
+백단server				        프런트front(웹 web, 앱app스마폰)
+ 스프링(자바)				jsp/asp/php
+Django/Flask(파이썬)		    vueJS/react/svelte
+ C, C++				    지원서비스 라이브러리
+
+   상품주문, 고객등록 =======>  데이터 저장 database(oracle, mysql)
+   database = SQL 언어 (ddl, dml, dtc)
+   클라우드기반(aws, gcc,애저, 오라클클라우드) 리눅스 기반
+   빅데이터기반 - 예측, AI 자동화. 많은데이터관리
+
+server : 서비스제공, 안정적, 지속적, 속도 업(윈도우, 리눅스)     ---|
+front엔드 : 개발자, 설계자, 구현언어 ( java, python, c, 코트린 ) ---| 
+
+html언어 (hyper text - mark language언어)
+ ㄴ 웹브라우저 언어(구글, 엣지, 사파리, 파이어폭스, 웨일)
+	http, ip프로토콜, tcp프로토콜. ftp, 태그 = <>, 파이썬 크롤링, vueJS/react
+<html>
+ <head>
+  <body>
+</html>
+	ㄴ 라인개행 = enter기능 x <br> <hr> 가로선
+	ㄴ 대소문자구별없음
+		<image source="./images/a1.png" alt="풍선">
+
+	ㄴ 쌍페어 <h3> </h3> <OL> </OL> <div> </div>
+		그냥 태그 <img src> <break> <br> <hr>
+	ㄴ 자동라인개행 = enter -> <div><table><ol> <ul><hr>
+						<header숫자1~5> <h숫자> 라인+ 짙하게 </h숫자>
+						<anchor href = "http주소 및 문서이름"> </a>
+
+html 속성 = atrribute = property
+<b style = "color : blue"> 안내문 </b>
+
+리스트 목록 ol, ul

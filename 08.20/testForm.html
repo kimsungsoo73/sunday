@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div,form</title>
+    <style>
+        * {
+            font-size: 15pt;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .input_group{
+            height : 40px;
+            border-bottom: 1px dotted #AACC;
+        }
+    </style>
+    <script>
+        function myNullCheck(){
+            var dname = document.myform.user_name.value;
+            if (dname == "" || dname == null ){
+                alert("데이터입력이 공백입니다\n다시입력하세요")
+            }else {
+                document.myfrom.user_pwd.focus();
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h3> 서비스를 이용을 위한 회원가입 </h3>
+    <div>
+        <form name="myform">
+            <fieldset>
+                <legend> 2024년 에어콘 가입화면 </legend>
+                <div class = "input_group">
+                    <label for=""> 이름 : </label>
+                    <input type="text" name = "user_name" id = "user_name">
+                </div>
+                <div class = "input_group">
+                    <label for=""> 비번 : </label>
+                    <input type="password" name = "user_password" id = "user_password">
+                </div>
+                <div class = "input_group">
+                    <label for=""> 전화번호 : </label>
+                    <input type="Phone Number" name = "user_phone" id = "user_phone">
+                </div>
+
+                <div class = "input_group">
+                    <label for=""> 성별 : </label>
+                    <label> <input type = "radio" name = "gender" id = "gender" value = "m">남자</label>
+                    <label> <input type = "radio" name = "gender" id = "gender" value = "w">여자</label>
+                </div>
+
+                <div class = "input_group">
+                    <label for=""> 직업 : </label>
+                    <select name="job"> 
+                        <option value="">-------선택하세요-------</option>
+                        <option value="dev">개발자</option>
+                        <option value="dba">데이터베이스관리자</option>
+                        <option value="pub">퍼블리셔개발자</option>
+                        <option value="coder">코더</option>
+                    </select>
+                </div>
+
+                <div class = "input_group">
+                    <label for="">파일 :</label>
+                    <input type="file" name = "myfile" id = "">
+                </div>
+
+                <div class = "input_group">
+                    <label for=""> </label> 
+                    <input type="button" oneclick="myNullCheck()" value = "가입하기">
+                    <input type="reset" value = "입력취소">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

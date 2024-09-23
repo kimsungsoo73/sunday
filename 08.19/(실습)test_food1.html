@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+	<style>
+		.allfood {width:900px; height:150px; text-align:center; border:1px solid #000; padding:5px; margin:20px;}
+		.food {width:265px; height:250px; text-align:center; border:1px solid #000; padding:5px; margin:20px;}
+		img {width:75px; height:60px; padding:5px;}
+		h2 {font-size:.8em; color:#000; font-weight:bold;}
+		.food {float:left;}
+	</style>
+
+	<script>
+		function drag(food) {		//드래그 시작시 호출 할 함수
+			food.dataTransfer.setData('Text', food.target.id);
+		};
+
+		function drop(food) {		//드롭시 호출 할 함수
+			var id = food.dataTransfer.getData('Text');
+			food.target.appendChild(document.getElementById(id));
+			//food.preventDefault();
+		};
+	</script>  
+</head>
+<body>
+
+<div class="allfood" ondrop="drop(event);" ondragenter="return false;" ondragover="return false;">
+	<h2>해당하는 음식을 종류별로 드레그 해서 채워보세요.</h2>
+	<img src="image/1.jpg" alt="비빔밥" draggable="true" id="kor1" ondragstart="drag(event)" />
+	<img src="image/2.jpg" alt="전복죽" draggable="true" id="kor2" ondragstart="drag(event)" />
+	<img src="image/3.jpg" alt="빈대떡" draggable="true" id="kor2" ondragstart="drag(event)" />
+	<img src="image/4.jpg" alt="골뱅이"  draggable="true" id="f1" ondragstart="drag(event)" />
+	<img src="image/5.jpg" alt="김밥" draggable="true" id="f2" ondragstart="drag(event)" />
+	<img src="image/6.jpg" alt="떡복이" draggable="true" id="f3" ondragstart="drag(event)" />
+	<img src="image/7.jpg" alt="짜장면" draggable="true" id="ch1" ondragstart="drag(event)" />
+	<img src="image/8.jpg" alt="탕수육" draggable="true" id="ch2" ondragstart="drag(event)" />
+	<img src="image/9.jpg" alt="짬뽕" draggable="true" id="ch3" ondragstart="drag(event)" />
+</div>
+
+	<div class="food" ondrop="drop(event);" ondragover="return false;">
+		<h2>한식</h2>
+	</div>
+	<div class="food" ondrop="drop(event);" ondragover="return false;">
+		<h2>분식</h2>
+	</div>
+	<div class="food" ondrop="drop(event);" ondragover="return false;">
+		<h2>중식</h2>
+	</div>
+</body>
+</html>
